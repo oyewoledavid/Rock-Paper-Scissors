@@ -26,7 +26,7 @@ def start():
 
     input_validation(user_choice)
 
-    while user_choice.upper() not in ["R", "P", "S"]:
+    if user_choice.upper() not in ["R", "P", "S"]:
         print("Please Enter a Valid Option")
         start()
     else:
@@ -40,20 +40,27 @@ def start():
 
         elif user_choice.upper() == "R" and cpu_choice == "P":
             print("CPU wins")
+            print("Thank you for playing")
 
         elif user_choice.upper() == "R" and cpu_choice == "S":
             print("Player Wins")
+            print("Thank you for playing")
 
         elif user_choice.upper() == "P" and cpu_choice == "R":
             print("Player Wins")
+            print("Thank you for playing")
 
         elif user_choice.upper() == "S" and cpu_choice == "R":
             print("CPU wins")
+            print("Thank you for playing")
 
         elif user_choice.upper() == "S" and cpu_choice == "P":
             print("Player wins")
+            print("Thank you for playing")
 
         elif user_choice.upper() == "P" and cpu_choice == "S":
             print("CPU wins")
-
+            print("Thank you for playing")
+        else:
+            print("Invalid Option")
 start()

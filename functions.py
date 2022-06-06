@@ -14,7 +14,7 @@ def input_validation(user_choice):
             print("Input can not be more than one character")
             return False
     else:
-        print("Option can not be empty")
+        print("Input can not be empty")
         return False
 
 
@@ -45,5 +45,3 @@ def show_choice(user_choice, cpu_choice):
 
     elif user_choice.upper() == "R" and cpu_choice == "R":
         print("Player(Rock):CPU(Rock)")
-
-    return show_choice
