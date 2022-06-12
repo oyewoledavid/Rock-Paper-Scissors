@@ -16,7 +16,7 @@
 import random
 from functions import *
 
-option = ("R", "P", "S")
+option = ["R", "P", "S"]
 
 
 def start():
